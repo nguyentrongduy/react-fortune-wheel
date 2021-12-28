@@ -1,1 +1,0 @@
-Source [vue-fortune-wheel](https://github.com/XiaoLin1995/vue-fortune-wheel)

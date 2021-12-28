@@ -142,7 +142,7 @@ const FortuneWheel = ({
   }, [disabled, isRotating, probabilityTotal]);
 
   // =========== functions ===========
-  
+
   /**
    * Whether the total probability of detection is 100
    * @returns {boolean}
@@ -153,7 +153,7 @@ const FortuneWheel = ({
     }
     return true;
   };
-  
+
   /**
    * Draw canvas
    */
@@ -258,7 +258,7 @@ const FortuneWheel = ({
     const rotateEndDegTemp = rotateBase + getTargetDeg(prizeIdTemp);
     setRotateEndDeg(rotateEndDegTemp);
   };
-  
+
   /**
    * Get the prize id
    */
@@ -267,7 +267,7 @@ const FortuneWheel = ({
     setRotateEndDeg(rotateEndDeg % 360);
     rotateEnd(prizeRes);
   };
-  
+
   /**
    * Get random prizes id
    * @returns {number}
@@ -277,19 +277,23 @@ const FortuneWheel = ({
     const prizeId = prizesIdArr[_.random(0, len - 1)];
     return prizeId;
   };
-  
+
   /**
    * The angle from which the prize is obtained
    * @param {number} prizeId
    * @returns number
    */
   const getTargetDeg = (prizeId) => {
+    const absoluteDegCanBeFlexible = 360 / prizes.length / 2;
+    const degCanBeFlexible = _.random(
+      absoluteDegCanBeFlexible * -1,
+      absoluteDegCanBeFlexible
+    );
     const angle = 360 / prizes.length;
     const num = prizes.findIndex((row) => row.id === prizeId);
     const prizeResTemp = prizes[num];
     setPrizeRes(prizeResTemp);
-    console.log("prizeResTemp", prizeResTemp);
-    return 360 - (angle * num + angle / 2);
+    return 360 - (angle * num + angle / 2) + degCanBeFlexible;
   };
 
   return (
