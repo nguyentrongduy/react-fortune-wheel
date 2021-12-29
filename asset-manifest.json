@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/react-fortune-wheel/static/css/main.8ca61513.css",
+    "main.js": "/react-fortune-wheel/static/js/main.c0f0f0c9.js",
+    "static/js/787.26b0bf20.chunk.js": "/react-fortune-wheel/static/js/787.26b0bf20.chunk.js",
+    "static/media/wheel.png": "/react-fortune-wheel/static/media/wheel.9cf10bed674ba2dcfd05.png",
+    "static/media/clipart_2.png": "/react-fortune-wheel/static/media/clipart_2.77dd6399ab6d08dc36d7.png",
+    "static/media/clipart.png": "/react-fortune-wheel/static/media/clipart.96dd565582d82fbe9b46.png",
+    "static/media/button.png": "/react-fortune-wheel/static/media/button.c7d100898152ccc2e0f4.png",
+    "index.html": "/react-fortune-wheel/index.html",
+    "main.8ca61513.css.map": "/react-fortune-wheel/static/css/main.8ca61513.css.map",
+    "main.c0f0f0c9.js.map": "/react-fortune-wheel/static/js/main.c0f0f0c9.js.map",
+    "787.26b0bf20.chunk.js.map": "/react-fortune-wheel/static/js/787.26b0bf20.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ca61513.css",
+    "static/js/main.c0f0f0c9.js"
+  ]
+}
